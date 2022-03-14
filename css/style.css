@@ -1,0 +1,93 @@
+@import url("reset.css");
+.wrapper{
+    max-height: 100%;
+    padding: 20px 15px;
+}
+body{
+    background-color: rgba(240, 127, 255, 0.3);
+}
+.header__image{
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+}
+.main__block-one{
+    background-color: rgb(178, 32, 64);
+    width: 100px;
+    height: 60px;
+}
+.main__block-one:hover + .main__block-two, 
+.main__block-two:hover{
+    visibility: visible;
+}
+.main__block-two{
+    background-color: rgb(32, 42, 178);
+    width: 400px;
+    height: 60px;
+    margin-left: 100px;
+    margin-top: -60px;
+    visibility: hidden;
+}
+.main__block-two:hover + .main__block-three, 
+.main__block-three:hover{
+    visibility: visible;
+}
+.main__block-three{
+    background-color: rgb(32, 178, 134);
+    width: 50px;
+    height: 300px;
+    margin-left: 450px;
+    visibility: hidden; 
+}
+.main__block-three:hover + .main__block-four,
+.main__block-four:hover{
+    visibility: visible;
+}
+.main__block-four{
+    background-color: rgb(49, 178, 32);
+    width: 300px;
+    height: 60px;
+    margin-left: 450px;
+    visibility: hidden;
+}
+.main__block-four:hover + .main__block-five,
+.main__block-five:hover{
+    visibility: visible;
+}
+.main__block-five{
+    background-color: rgb(178, 32, 56);
+    width: 40px;
+    height: 200px;
+    margin-left: 710px;
+    visibility: hidden;
+}
+.main__block-five:hover + .main__block-six,
+.main__block-six:hover{
+    visibility: visible;
+}
+.main__block-six{
+    background-color: rgb(178, 32, 56);
+    width: 200px;
+    height: 50px;
+    margin-left: 710px;
+    visibility: hidden;
+    text-align: center;
+ }
+ .main__image{
+    display: none;
+    height: 600px;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: -700px;
+} 
+ #main__image:target{
+    display: block;
+} 
+.main__link{
+    font-weight: 700;
+    font-size: 18px;
+}
+.main__link:target{
+    visibility: visible;
+}
+  
